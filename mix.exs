@@ -1,4 +1,4 @@
-defmodule Multibase.MixProject do
+defmodule CID.MixProject do
   use Mix.Project
 
   @version "0.0.1"
@@ -13,7 +13,8 @@ defmodule Multibase.MixProject do
       deps: deps(),
 
       # Hex
-      description: "Elixir library for creating self-describing content-addressed identifiers for distributed systems (CIDs).",
+      description:
+        "Elixir library for creating self-describing content-addressed identifiers for distributed systems (CIDs).",
       package: package(),
 
       # Docs
@@ -23,14 +24,13 @@ defmodule Multibase.MixProject do
   end
 
   def application do
-    [
-    ]
+    []
   end
 
   defp package do
     [
       maintainers: [
-        "nocursor",
+        "nocursor"
       ],
       licenses: ["MIT"],
       links: %{github: @source_url},
@@ -51,13 +51,12 @@ defmodule Multibase.MixProject do
   defp extras do
     [
       "README.md",
-      "docs/FAQ.md",
+      "docs/FAQ.md"
     ]
   end
 
   defp groups_for_extras do
-    [
-    ]
+    []
   end
 
   defp deps do
@@ -69,7 +68,7 @@ defmodule Multibase.MixProject do
       {:multicodec, "~> 0.0.2"},
       {:basefiftyeight, "~> 0.1.0"},
       {:ex_multihash, "~> 2.0"},
-      {:varint, "~> 1.2"},
+      {:varint, "~> 1.2"}
     ]
   end
 end
